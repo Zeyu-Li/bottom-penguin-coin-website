@@ -11,6 +11,8 @@ Figma: https://www.figma.com/file/ZVgNmb42SzdBoZkflqJZvN/Bottom-Coin-Design?node
 - Tail Wind
 - React
 - SCSS
+- three.js
+- react-pdf
 
 ## License
 
