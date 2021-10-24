@@ -5,8 +5,8 @@ export const WhitePaper = () => {
     document.title = "White Paper | BPC";
   });
   return (
-    <>
-      <h1></h1>
-    </>
+    <div className="h-full w-full main-background">
+      <h1 className="text-xl text-white">White Paper</h1>
+    </div>
   );
 };
