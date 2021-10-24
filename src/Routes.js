@@ -1,20 +1,17 @@
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+
+import { MainPage, WhitePaper, PageNotFound } from "./pages/Pages";
+
 function Routes() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={MainPage} />
+        <Route path="/whitepaper" component={WhitePaper} />
+        <Route path="/404" component={PageNotFound} />
+        <Route component={PageNotFound} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
