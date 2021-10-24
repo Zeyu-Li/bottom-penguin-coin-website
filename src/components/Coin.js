@@ -4,19 +4,68 @@ import { useFrame } from "@react-three/fiber";
 
 const Coin = (props) => {
   const group = useRef();
+  const requestRef = useRef();
+  const speed1 = 0.008;
+  const speed2 = 0.02;
   const { nodes, materials } = useGLTF("/bottom_penguin_coin.gltf");
   useEffect(() => {
     group.current.rotation.x = 90;
+    group.current.scale.x = 2;
+    group.current.scale.y = 2;
+    group.current.scale.z = 2;
+    animate();
   });
+  const animate = (time) => {
+    // Change the state according to the animation
+    if (group.current.rotation.z % Math.PI > 2.1) {
+      group.current.rotation.z += speed1;
+    } else {
+      group.current.rotation.z += speed2;
+    }
+    // console.log(group.current.rotation.z % Math.PI);
+
+    requestRef.current = requestAnimationFrame(animate);
+  };
 
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
+        geometry={nodes.Curve001.geometry}
+        material={nodes.Curve001.material}
+        position={[0.42, 0.06, 0.14]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve004.geometry}
+        material={nodes.Curve004.material}
+        position={[-0.41, 0.06, 0.13]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve007.geometry}
+        material={materials["SVGMat.001"]}
+        position={[0.01, 0.06, 0.11]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Cylinder.geometry}
         material={nodes.Cylinder.material}
         scale={[1.1, 0.1, 1.1]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder002.geometry}
+        material={nodes.Cylinder002.material}
+        scale={[1.01, 0.06, 1.01]}
       />
       <mesh
         castShadow
@@ -45,40 +94,8 @@ const Coin = (props) => {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Curve001.geometry}
-        material={nodes.Curve001.material}
-        position={[0.42, 0.06, 0.14]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve004.geometry}
-        material={nodes.Curve004.material}
-        position={[-0.41, 0.06, 0.13]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve007.geometry}
-        material={materials["SVGMat.001"]}
-        position={[0.01, 0.06, 0.11]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Curve011.geometry}
         material={nodes.Curve011.material}
-        position={[0.16, 0.06, -0.29]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve012.geometry}
-        material={nodes.Curve012.material}
         position={[0.16, 0.06, -0.29]}
         scale={[5.5, 5.5, 5.5]}
       />
@@ -93,9 +110,10 @@ const Coin = (props) => {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Cylinder002.geometry}
-        material={nodes.Cylinder002.material}
-        scale={[1.01, 0.06, 1.01]}
+        geometry={nodes.Curve012.geometry}
+        material={nodes.Curve012.material}
+        position={[0.16, 0.06, -0.29]}
+        scale={[5.5, 5.5, 5.5]}
       />
       <mesh
         castShadow
