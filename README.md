@@ -6,6 +6,12 @@ A React-Tailwind website for Bottom Penguin Coin
 
 Figma: https://www.figma.com/file/ZVgNmb42SzdBoZkflqJZvN/Bottom-Coin-Design?node-id=2%3A2
 
+## Screenshot
+
+![screen1](img/screen1.png)
+
+
+
 ## Dependencies
 
 - Tail Wind

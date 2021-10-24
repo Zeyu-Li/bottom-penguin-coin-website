@@ -36,7 +36,7 @@ export const MainPage = () => {
           <p className="text-center text-5xl font-bold text-white">
             The Open Source Alternative
           </p>
-          <div className="p-16 flex justify-around">
+          <div className="p-24 flex justify-around">
             <a href="/whitepaper" className="cursor-pointer rocket transition">
               <button
                 title="See white paper"
