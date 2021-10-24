@@ -1,6 +1,5 @@
 import { memo, useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
 
 const Coin = (props) => {
   const group = useRef();
@@ -16,7 +15,7 @@ const Coin = (props) => {
     group.current.scale.z = 2;
     animate();
   });
-  const animate = (time) => {
+  const animate = () => {
     // Change the state according to the animation
     if (group.current.rotation.z % Math.PI > 2.1) {
       group.current.rotation.z += speed1;

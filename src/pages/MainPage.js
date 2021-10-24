@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { CoinWrapper } from "../components/CoinWrapper";
 
 export const MainPage = () => {
@@ -23,7 +23,12 @@ export const MainPage = () => {
         <p className="text-center text-secondary text-5xl font-bold">
           Allowing Penguins <br />
           to explore space{" "}
-          <a className="cursor-pointer rocket transition">🚀</a>
+          <b
+            title="Go to the moon"
+            className="cursor-pointer rocket transition"
+          >
+            🚀
+          </b>
         </p>
       </div>
       <div className="main-background--reverse" id="info">
@@ -33,16 +38,23 @@ export const MainPage = () => {
           </p>
           <div className="p-16 flex justify-around">
             <a href="/whitepaper" className="cursor-pointer rocket transition">
-              <button className="text-primary bg-white p-4 text-xl rounded-md shadow-xl">
+              <button
+                title="See white paper"
+                className="text-primary bg-white p-4 text-xl rounded-md shadow-xl"
+              >
                 White Paper
               </button>
             </a>
             <a
               href="https://github.com/Zeyu-Li/bottom-penguin"
               target="_blank"
+              rel="noreferrer"
               className="cursor-pointer rocket transition ml-5"
             >
-              <button className="text-white bg-primary p-4 text-xl rounded-md shadow-xl ">
+              <button
+                title="See source code"
+                className="text-white bg-primary p-4 text-xl rounded-md shadow-xl "
+              >
                 Source Code
               </button>
             </a>
@@ -59,6 +71,7 @@ export const MainPage = () => {
           <a
             className="text-primary cursor-pointer font-bold"
             href="mailto:coins@andrewli.site"
+            title="Email Team Bottom Penguin Coin"
           >
             coins@andrewli.site
           </a>
