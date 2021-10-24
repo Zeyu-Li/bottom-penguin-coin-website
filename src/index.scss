@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -39,4 +40,21 @@ button {
 
 .main-background {
   background: linear-gradient(180deg, #4440ea 0%, #465cd0 0.01%, #b29eec 100%);
+}
+
+.main-background--reverse {
+  background: linear-gradient(180deg, #b29eec 0%, #465cd0 100%);
+}
+
+.space {
+  padding: 120px;
+}
+
+.space-2 {
+  padding: 20vw;
+  padding-top: 15vh;
+}
+
+.whitepaper {
+  min-height: 100vh;
 }

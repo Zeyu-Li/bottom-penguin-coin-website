@@ -7,6 +7,7 @@ const Coin = (props) => {
   const requestRef = useRef();
   const speed1 = 0.008;
   const speed2 = 0.02;
+  let counter = 0;
   const { nodes, materials } = useGLTF("/bottom_penguin_coin.gltf");
   useEffect(() => {
     group.current.rotation.x = 90;
@@ -27,8 +28,18 @@ const Coin = (props) => {
     requestRef.current = requestAnimationFrame(animate);
   };
 
+  const toggleLarger = () => {
+    counter++;
+    if (counter % 3 === 0) {
+      document.href = "https://github.com/Zeyu-Li/bottom-penguin";
+    }
+    group.current.scale.x = group.current.scale.x === 2.3 ? 1.8 : 2.3;
+    group.current.scale.y = group.current.scale.y === 2.3 ? 1.8 : 2.3;
+    group.current.scale.z = group.current.scale.z === 2.3 ? 1.8 : 2.3;
+  };
+
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null} onClick={toggleLarger}>
       <mesh
         castShadow
         receiveShadow
