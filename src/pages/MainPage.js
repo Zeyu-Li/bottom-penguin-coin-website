@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { CoinWrapper } from "../components/CoinWrapper";
 import gsap from "gsap";
 
