@@ -49,6 +49,21 @@ export const MainPage = () => {
           </div>
         </div>
       </div>
+      <div className="space" id="contact">
+        <p className="text-center text-secondary text-4xl font-md pb-24">
+          Support the penguin 🐧 <br />
+          migration to space
+        </p>
+        <p className="text-center text-secondary text-4xl font-md">
+          Contact Team Bottom Penguin Coin @ <br />
+          <a
+            className="text-primary cursor-pointer font-bold"
+            href="mailto:coins@andrewli.site"
+          >
+            coins@andrewli.site
+          </a>
+        </p>
+      </div>
     </>
   );
 };
