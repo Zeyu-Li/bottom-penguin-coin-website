@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { Canvas } from "@react-three/fiber";
+import React, { useState, useEffect, Suspense } from "react";
+import Coin from "../components/Coin";
 
 export const PageNotFound = () => {
   useEffect(() => {
@@ -12,6 +14,12 @@ export const PageNotFound = () => {
         </button>
       </a>
       <h1 className=" text-6xl text-white text-center">Page 404</h1>
+      <Canvas>
+        <Suspense fallback={null}>
+          <Coin />
+        </Suspense>
+        <ambientLight intensity={1} />
+      </Canvas>
       <h2 className=" text-4xl text-white text-center m-8">
         This page was stolen <br />
         by some penguins
