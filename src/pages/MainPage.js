@@ -1,10 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { CoinWrapper } from "../components/CoinWrapper";
+import gsap from "gsap";
 
 export const MainPage = () => {
+  let rocketOffset = -350;
+  // const [rocketOffset, setRocketOffset] = useState(-500);
   useEffect(() => {
     document.title = "Main | BPC";
   });
+
+  const triggerRocket = () => {
+    gsap.to(".bg-rocket", 4, {
+      backgroundPositionX: window.innerWidth,
+      ease: "power3.easeOut",
+      onComplete: () => {
+        gsap.to(".bg-rocket", 0, {
+          backgroundPositionX: -350,
+          ease: "power3.easeOut",
+        });
+      },
+    });
+  };
+
   return (
     <>
       <div className="h-screen w-screen main-background flex justify-center content-center flex-col">
@@ -19,13 +36,21 @@ export const MainPage = () => {
           the world 🌏 since 2021
         </h2>
       </div>
-      <div className="space" id="about">
+      <div
+        className="space bg-rocket"
+        id="about"
+        style={{
+          backgroundImage: `url("rocket.svg")`,
+          backgroundPositionX: rocketOffset,
+        }}
+      >
         <p className="text-center text-secondary text-5xl font-bold">
           Allowing Penguins <br />
           to explore space{" "}
           <b
             title="Go to the moon"
             className="cursor-pointer rocket transition"
+            onClick={triggerRocket}
           >
             🚀
           </b>

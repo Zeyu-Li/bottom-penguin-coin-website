@@ -62,3 +62,7 @@ button {
 .rocket:hover {
   filter: brightness(0.8);
 }
+.bg-rocket {
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}

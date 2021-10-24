@@ -42,96 +42,9 @@ const Coin = (props) => {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Curve001.geometry}
-        material={nodes.Curve001.material}
-        position={[0.42, 0.06, 0.14]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve004.geometry}
-        material={nodes.Curve004.material}
-        position={[-0.41, 0.06, 0.13]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve007.geometry}
-        material={materials["SVGMat.001"]}
-        position={[0.01, 0.06, 0.11]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder.geometry}
-        material={nodes.Cylinder.material}
-        scale={[1.1, 0.1, 1.1]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Cylinder002.geometry}
         material={nodes.Cylinder002.material}
         scale={[1.01, 0.06, 1.01]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve003.geometry}
-        material={nodes.Curve003.material}
-        position={[-0.4, 0.06, 0.14]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve006.geometry}
-        material={nodes.Curve006.material}
-        position={[-0.01, 0.06, -0.57]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve009.geometry}
-        material={nodes.Curve009.material}
-        position={[0.01, 0.08, 0.34]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve011.geometry}
-        material={nodes.Curve011.material}
-        position={[0.16, 0.06, -0.29]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve021.geometry}
-        material={nodes.Curve021.material}
-        position={[-0.01, 0.06, -0.22]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve012.geometry}
-        material={nodes.Curve012.material}
-        position={[0.16, 0.06, -0.29]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve018.geometry}
-        material={nodes.Curve018.material}
-        position={[0.16, 0.06, 0.58]}
-        scale={[5.5, 5.5, 5.5]}
       />
       <mesh
         castShadow
@@ -140,22 +53,6 @@ const Coin = (props) => {
         material={nodes.Curve002.material}
         position={[0.43, 0.06, 0.13]}
         scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve020.geometry}
-        material={nodes.Curve020.material}
-        position={[0.01, 0.06, -0.22]}
-        scale={[5.5, 5.5, 5.5]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder003.geometry}
-        material={nodes.Cylinder003.material}
-        position={[0, 0.03, -0.41]}
-        scale={[0.43, 0.06, 0.43]}
       />
       <mesh
         castShadow
@@ -200,10 +97,113 @@ const Coin = (props) => {
       <mesh
         castShadow
         receiveShadow
+        geometry={nodes.Cylinder.geometry}
+        material={nodes.Cylinder.material}
+        scale={[1.1, 0.1, 1.1]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Curve023.geometry}
         material={nodes.Curve023.material}
         position={[0.16, 0.08, -0.29]}
         scale={[9.16, 3.25, 9.16]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve001.geometry}
+        material={nodes.Curve001.material}
+        position={[0.42, 0.06, 0.14]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve004.geometry}
+        material={nodes.Curve004.material}
+        position={[-0.41, 0.06, 0.13]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve007.geometry}
+        material={materials["SVGMat.001"]}
+        position={[0.01, 0.06, 0.11]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve003.geometry}
+        material={nodes.Curve003.material}
+        position={[-0.4, 0.06, 0.14]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve011.geometry}
+        material={nodes.Curve011.material}
+        position={[0.16, 0.06, -0.29]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve006.geometry}
+        material={nodes.Curve006.material}
+        position={[-0.01, 0.06, -0.57]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve021.geometry}
+        material={nodes.Curve021.material}
+        position={[-0.01, 0.06, -0.22]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve009.geometry}
+        material={nodes.Curve009.material}
+        position={[0.01, 0.08, 0.34]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve012.geometry}
+        material={nodes.Curve012.material}
+        position={[0.16, 0.06, -0.29]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve018.geometry}
+        material={nodes.Curve018.material}
+        position={[0.16, 0.06, 0.58]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Curve020.geometry}
+        material={nodes.Curve020.material}
+        position={[0.01, 0.06, -0.22]}
+        scale={[5.5, 5.5, 5.5]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder003.geometry}
+        material={nodes.Cylinder003.material}
+        position={[0, 0.03, -0.41]}
+        scale={[0.43, 0.06, 0.43]}
       />
       <mesh
         castShadow
