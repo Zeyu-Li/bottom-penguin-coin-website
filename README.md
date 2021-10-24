@@ -2,7 +2,13 @@
 
 ![bottom-penguin](img/bottom-penguin.png)
 
-A React-Tailwind website for Bottom Penguin Coin
+![Vercel](https://vercelbadge.vercel.app/api/Zeyu-Li/bottom-penguin-coin-website?style=for-the-badge)
+
+A React-Tailwind website for Bottom Penguin Coin! The next coin that will go to the moon!
+
+Live @ [coins.andrewli.site](https://coins.andrewli.site/)
+
+
 
 Figma: https://www.figma.com/file/ZVgNmb42SzdBoZkflqJZvN/Bottom-Coin-Design?node-id=2%3A2
 
@@ -10,7 +16,9 @@ Figma: https://www.figma.com/file/ZVgNmb42SzdBoZkflqJZvN/Bottom-Coin-Design?node
 
 ![screen1](img/screen1.png)
 
+![icon](img/icon.png)
 
+\***Click the rocket 🚀 and go to the moon**
 
 ## Dependencies
 
