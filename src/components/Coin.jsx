@@ -14,6 +14,7 @@ const Coin = (props) => {
     group.current.scale.y = 2;
     group.current.scale.z = 2;
     animate();
+    return () => cancelAnimationFrame(requestRef.current);
   });
   const animate = () => {
     // Change the state according to the animation
