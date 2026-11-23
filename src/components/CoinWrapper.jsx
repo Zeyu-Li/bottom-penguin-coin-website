@@ -8,8 +8,9 @@ export const CoinWrapper = () => {
       <Suspense fallback={null}>
         <Coin />
       </Suspense>
-      <ambientLight intensity={0.1} />
-      <directionalLight intensity={1} position={[5, 5, 5]} />
+      {/* three.js r155+ uses physically correct lighting; scaling by PI keeps the original brightness. */}
+      <ambientLight intensity={0.1 * Math.PI} />
+      <directionalLight intensity={Math.PI} position={[5, 5, 5]} />
     </Canvas>
   );
 };

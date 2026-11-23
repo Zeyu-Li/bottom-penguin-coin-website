@@ -2,9 +2,14 @@ import React, { useEffect, useState } from "react";
 
 import { Document, Page, pdfjs } from "react-pdf";
 
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/TextLayer.css";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// Bundle the worker that matches react-pdf's pdfjs-dist instead of loading it from a CDN.
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.mjs",
+  import.meta.url
+).toString();
 
 export const WhitePaper = () => {
   const [PDFWidth, setPDFWidth] = useState(
